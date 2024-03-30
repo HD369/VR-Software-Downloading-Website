@@ -1,0 +1,347 @@
+/*____________________________________👉 HOMEPAGE CSS and NAVBAR CSS and COMPONENT ANIMATION CSS 👈___________________________________ */
+
+
+
+/*______________________ navbar CSS (start) __________________________*/
+.topnav a {
+  overflow: hidden;
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+}
+
+.topnav a:hover {
+  box-shadow: rgb(34, 214, 238) 0px 3px 0px 0px;
+  color: rgb(255, 203, 141);
+  border-radius: 20px;
+  transition: calc(0.2s);
+}
+
+/*______________________ navbar CSS (end) __________________________*/
+
+
+/*____________________ All heading section CSS (start) ________________________*/
+.allsectionheadtext {
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+/*____________________ All heading section CSS (start) ________________________*/
+
+
+/*____________________ Homepage CSS (start) ________________________*/
+
+.homeheaderimage {
+  position: absolute;
+  left: 60%;
+  top: 70px;
+  filter: drop-shadow(2px 3px 50px rgb(88, 219, 248));
+  animation: bounce-in-right 2s;
+}
+
+@keyframes bounce-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.homeheadertext {
+  color: white;
+  font-family: fantasy;
+  margin-left: 5%;
+
+  h1 {
+    font-size: 80px;
+  }
+}
+
+.homeheadertxt1 {
+  -webkit-animation: mover2 1s infinite alternate;
+  animation: mover2 1s infinite alternate;
+}
+
+.homeheadertxt1 {
+  -webkit-animation: mover2 1s infinite alternate;
+  animation: mover2 1s infinite alternate;
+}
+
+@-webkit-keyframes mover2 {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes mover2 {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+/*__________ Blue box animation css (start) _________*/
+#body1 {
+  color: rgb(4, 152, 137);
+  font-size: medium;
+  font-family: "DIN Alternate";
+  text-align: left;
+}
+
+#cube-container {
+  box-sizing: border-box;
+  transform-style: preserve-3d;
+  left: 60%;
+  position: absolute;
+  top: 400px;
+  left: 70%;
+  width: 250px;
+  height: 250px;
+  transition: 2s cubic-bezier(.68, -0.55, .27, 1.55);
+  transform: translate(-50%, -50%);
+
+  .face {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    border: 2px solid #03baed;
+    background: #03caed70;
+    box-shadow: 0px 0px 150px #03ceed;
+
+    &.top {
+      transform: rotateX(90deg);
+      margin-top: -25%;
+    }
+
+    &.right {
+      transform: rotateY(90deg);
+      margin-left: 25%;
+    }
+
+    &.left {
+      transform: rotateY(-90deg);
+      margin-left: -25%;
+    }
+
+    &.bottom {
+      transform: rotateX(90deg);
+      margin-top: 25%;
+    }
+
+    &.back {
+      transform: translateZ(125px);
+    }
+
+    &.front {
+      transform: translateZ(-125px);
+    }
+  }
+
+  &:hover {
+    transform: rotateX(-25deg) rotateY(-40deg) translate(-50%, -50%);
+    transition: 2s cubic-bezier(.68, -0.55, .27, 1.55);
+  }
+}
+
+@media only screen and (max-width:740px) {
+  #cube-container {
+    width: 20%;
+    height: 120px;
+    margin-top: -20%;
+  }
+}
+
+@media only screen and (max-width:1024px) {
+  #cube-container {
+    margin-top: -10%;
+  }
+}
+
+/*__________ Blue box animation css (end) _________*/
+
+.infomationsection2 {
+  margin: 40px;
+  box-shadow: #03ceed 20px 20px 15px;
+  border: 1px solid white;
+}
+
+.infomationsection1 {
+  filter: drop-shadow(12px 2px 30px #03ceed);
+}
+
+/*____________________ Homepage CSS (end) ________________________*/
+
+
+/*_______________________________________ Animation section (start) _______________________________________*/
+.div1 {
+  transform:
+    perspective(750px) translate3d(0px, 0px, -250px) rotateX(27deg) scale(0.9, 0.9);
+  border-radius: 20px;
+  transition: 0.4s ease-in-out transform;
+
+  &:hover {
+    transform: translate3d(0px, 0px, -250px);
+  }
+}
+
+.div2 {
+  transform:
+    perspective(800px) rotateY(25deg) scale(0.9) rotateX(10deg);
+  filter: blur(2px);
+  opacity: 0.5;
+  transition: 0.6s ease all;
+
+  &:hover {
+    transform:
+      perspective(800px) rotateY(-15deg) translateY(-50px) rotateX(-10deg) scale(1);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+.div3 {
+  transform:
+    scale(1) rotateY(-30deg) rotateX(45deg) translateZ(4.5rem);
+  transform-origin: 50% 100%;
+  transform-style: preserve-3d;
+  transition: 0.6s ease transform;
+
+  &:hover {
+    transform: scale(1);
+  }
+
+  &::before {
+    transform: translateZ(4rem);
+
+    &:hover {
+      transform: translateZ(0);
+    }
+  }
+
+  &::after {
+    transform: translateZ(-4rem);
+
+    &:hover {
+      transform: translateZ(-1px);
+    }
+  }
+}
+
+/*_______________________________________ Animation section (end) _______________________________________*/
+
+
+
+/* ________________Price card Section (start)___________________________________________*/
+/* ________________Price card animation (start)___________________*/
+.price {
+  --f: .1;
+  --r: 35px;
+
+  --_f: calc(100%*var(--f)/(1 + var(--f)));
+  --_a: calc(90deg*var(--f));
+  width: 250px;
+  aspect-ratio: calc(1 + var(--f));
+  object-fit: cover;
+  clip-path: inset(0 var(--_f) 0 0 round var(--r));
+  transform: perspective(400px) var(--_t, rotateY(var(--_a)));
+  transition: .5s;
+  cursor: pointer;
+  margin: 70px;
+}
+
+.price:hover {
+  clip-path: inset(0 0 0 var(--_f) round var(--r));
+  --_t: translateX(calc(-1*var(--_f))) rotateY(calc(-1*var(--_a)))
+}
+
+.img1 {
+  filter: drop-shadow(6px 2px 10px rgb(191, 243, 255));
+}
+
+.star {
+  margin-left: 47%;
+}
+
+/* ____________________ Price card animation (end) ___________________*/
+.month_form {
+  background-color: #020d39d8;
+}
+
+.payfeild1 {
+  box-shadow: inset 4px 4px 7px rgba(105, 105, 105, 0.805);
+  border: none;
+  width: 100%;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.payfeild1:focus {
+  color: green;
+  font-size: 20px;
+}
+
+/* ________________Price card Section (end)_____________________________________________*/
+
+
+
+
+/*____________________ Joincompany testimonials section CSS (start) ________________________*/
+.testimonials {
+  filter: drop-shadow(10px 10px 5px rgb(69, 219, 252));
+}
+
+.testimonialsback {
+  background-color: #08123d;
+}
+
+.countericon {
+  font-size: 80px;
+  width: 100%;
+}
+
+.counternumbertxt {
+  text-align: center;
+  font-family: sans-serif;
+  color: white;
+}
+
+/*____________________ Joincompany testimonials section CSS (end) ________________________*/
+
+.paysuccess {
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+    transform: rotate(80deg);
+  }
+
+  100% {
+      transform: scale(1.2);
+  }
+}
+
+.loadr{
+  margin-top: 400px;
+}

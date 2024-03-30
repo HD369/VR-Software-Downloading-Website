@@ -1,0 +1,29 @@
+
+.learnimg{
+	filter: drop-shadow(12px 2px 30px rgb(69, 219, 252));
+}
+.lernmore{
+	text-align: center;
+	font-family: sans-serif;
+}
+
+.img3{
+    filter: drop-shadow(12px 0px 30px rgb(69, 219, 252));
+}
+
+
+.div4 {
+	transform:
+	  perspective(70rem) translate3d(0px, 0px, -50px) rotateX(20deg) scale(0.9, 0.9);
+	border-radius: 20px;
+	transition: 0.4s ease-in-out transform;
+    filter: drop-shadow(12px 0px 50px rgb(69, 219, 252));
+	display: flex;
+	flex-wrap: wrap;
+	
+	&:hover {
+	  transform: translate3d(0px, 0px, -250px);
+	}
+  }
+
+

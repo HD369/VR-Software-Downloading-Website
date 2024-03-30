@@ -1,0 +1,175 @@
+.formlogin2 {
+    max-width: 450px;
+    /* overflow: hidden; */
+    margin: 180px auto;
+    margin-left: 90px;
+    z-index: 2;
+    background: transparent;
+    backdrop-filter: blur(8px);
+    border-radius: 50px;
+    padding: 25px;
+    text-align: center;
+  }
+  @media only screen and (min-width:450px){
+    .formlogin2{
+      width: auto;
+    }
+  }
+
+  .adminimg{
+    position: absolute;
+  }
+
+  .admininput {
+    width: 300px;
+    height: 30px;
+    border-radius: 7px;
+    border: none;
+    padding-left: 8px;
+    background-color: transparent;
+    box-shadow: inset white 3px 3px 6px 0px, rgb(32, 32, 32) 2px 2px 5px;
+    transition: 0.8s;
+  }
+  
+  .admininput:hover {
+    box-shadow: inset rgb(255, 255, 255) -3px -3px 5px 0px;
+    transform: scale(1.3);
+}
+
+  :focus{
+    outline: none;
+  }
+
+
+
+/*______________________________ Navbar Admin css (start) __________________________________*/
+.adminavbar{
+  background-color: #262d4a;
+}
+.manubody{
+  background-color: #030a25;
+}
+.manulinkicon{
+  font-size: 25px;
+  margin: 0px 10px;
+}
+.manulink{
+  background-color: #262d4a;
+  border-radius: 10px;
+  text-decoration: none;
+  margin:5px;
+  padding: 5px;
+  color: rgb(192, 218, 253);
+  transition: 0.2s;
+}
+.manulink:hover{
+  color: rgba(255, 207, 75, 0.881);
+  transform: scale(1.1);
+  box-shadow: inset white 2px 2px 5px;
+}
+.notificationbell{
+  color: rgba(255, 207, 75, 0.881);
+  font-size: 30px;
+}
+.dropdown_notification{
+ position: absolute;
+ left: 10%
+}
+/*______________________________ Navbar Admin css (end) __________________________________*/
+
+
+/*______________________________ Dashboard Admin css (start) __________________________________*/
+.dashboard_firstcard_container{
+  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  color: rgb(255, 255, 255);
+}
+.dashboard_firstcard{
+  background-color: #8e7dff;  
+  border-radius: 20px;
+  overflow: hidden;
+  width: 20%;
+  margin: 35px;
+  padding: 15px;
+}
+.dashboard_secondcard{
+  background-color: #ff80ee;  
+  border-radius: 20px;
+  overflow: hidden;
+  width: 20%;
+  margin: 35px;
+  padding: 15px;
+}
+.dashboard_thirdcard{
+  background-color: #fd7f8a;  
+  border-radius: 20px;
+  overflow: hidden;
+  width: 20%;
+  margin: 35px;
+  padding: 15px;
+}
+.dashboard_fourcard{
+  background-color: #d6ad61;  
+  border-radius: 20px;
+  overflow: hidden;
+  width: 20%;
+  margin: 35px;
+  padding: 15px;
+}
+
+.dashboard_secondcard_container{
+  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+}
+.dashboard_firstcard1{
+  background-color: #40c0cc;  
+  border-radius: 20px;
+  overflow: hidden;
+  width: 20%;
+  margin: 35px;
+  padding: 15px;
+}
+.dashboard_secondcard2{
+  background-color: #e4c838;  
+  border-radius: 20px;
+  overflow: hidden;
+  width: 20%;
+  margin: 35px;
+  padding: 15px;
+}
+.dashboard_thirdcard3{
+  background-color: #9BCF53;  
+  border-radius: 20px;
+  overflow: hidden;
+  width: 20%;
+  margin: 35px;
+  padding: 15px;
+}
+.dashboard_fourcard4{
+  background-color: #9c9888;  
+  border-radius: 20px;
+  overflow: hidden;
+  width: 20%;
+  margin: 35px;
+  padding: 15px;
+}
+
+
+
+/*______________________________ Dashboard Admin css (end) __________________________________*/
+
+/*______________________________ Year pay css (start) ______________________________________*/
+.ypaycss{
+  background-color: #cda34f;
+  color: white;
+}
+.border_year{
+  color: green;
+}
+
+.chartcss{
+  box-shadow: inset #030a25c6 -2px -2px 15px;
+}
